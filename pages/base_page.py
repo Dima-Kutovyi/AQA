@@ -7,6 +7,3 @@ class BasePage(object):
 
     def go(self):
         self.driver.get(self.url)
-
-
-

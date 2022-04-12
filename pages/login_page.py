@@ -2,7 +2,6 @@ from selenium.webdriver.common.by import By
 from .base_element import BaseElement
 from .base_page import BasePage
 
-
 class LoginPage(BasePage):
 
     url = 'http://demo.hospitalrun.io'\
@@ -26,6 +25,4 @@ class LoginPage(BasePage):
     def error_message(self):
         locator = (By.XPATH, "//div[@class='alert alert-danger form-signin-alert']")
         return BaseElement(driver=self.driver, by=locator[0], value=locator[1])
-
-
 
