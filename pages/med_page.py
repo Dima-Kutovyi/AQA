@@ -15,32 +15,32 @@ class MedPage(BasePage):
 
     @property
     def patient_field(self):
-        locator = (By.ID, 'patientTypeAhead-ember2684')
+        locator = (By.ID, 'patientTypeAhead-ember2783')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def medication_field(self):
-        locator = (By.ID, 'inventoryItemTypeAhead-ember2751')
+        locator = (By.ID, 'inventoryItemTypeAhead-ember2850')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def prescription_field(self):
-        locator = (By.ID, 'prescription-ember2783')
+        locator = (By.ID, 'prescription-ember2882')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def prescription_date(self):
-        locator = (By.ID, 'display_prescriptionDate-ember3325')
+        locator = (By.ID, 'display_prescriptionDate-ember2905')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def quantity_field(self):
-        locator = (By.ID, 'quantity-ember2825')
+        locator = (By.ID, 'quantity-ember2924')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def refils_field(self):
-        locator = (By.ID, 'refills-ember3335')
+        locator = (By.ID, 'refills-ember2931')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
