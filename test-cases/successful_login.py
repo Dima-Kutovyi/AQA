@@ -5,6 +5,7 @@ from pages.login_page import LoginPage
 
 # Test Setup
 browser = webdriver.Chrome()
+#browser = webdriver.Firefox()
 currentURL = None
 
 # Successful Login
