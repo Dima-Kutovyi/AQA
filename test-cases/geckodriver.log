@@ -1,0 +1,10 @@
+1650131012540	geckodriver	INFO	Listening on 127.0.0.1:62961
+1650131012573	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\dkutovoy\\AppData\\Local\\Temp\\rust_mozprofileMTo5wY"
+1650131013277	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\dkutovoy\\AppData\\Local\\Temp\\rust_mozprofileMTo5wY\\search.json.mozlz4", (void 0)))
+1650131016151	Marionette	INFO	Listening on port 62988
+Read port: 62988
+1650131016248	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://demo.hospitalrun.io"
+1650131170841	Marionette	INFO	Stopped listening on port 62988
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
