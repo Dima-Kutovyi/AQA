@@ -15,37 +15,38 @@ class MedPage(BasePage):
 
     @property
     def patient_field(self):
-        locator = (By.ID, 'patientTypeAhead-ember2783')
+        locator = (By.ID, 'patientTypeAhead-ember2712')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def medication_field(self):
-        locator = (By.ID, 'inventoryItemTypeAhead-ember2850')
+        locator = (By.ID, 'inventoryItemTypeAhead-ember2779')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def prescription_field(self):
-        locator = (By.ID, 'prescription-ember2882')
+        locator = (By.ID, 'prescription-ember2811')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def prescription_date(self):
-        locator = (By.ID, 'display_prescriptionDate-ember2905')
+        locator = (By.ID, 'display_prescriptionDate-ember2834')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def quantity_field(self):
-        locator = (By.ID, 'quantity-ember2924')
+        locator = (By.ID, 'quantity-ember2853')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def refils_field(self):
-        locator = (By.ID, 'refills-ember2931')
+        locator = (By.ID, 'refills-ember2860')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def add_button(self):
-        locator = (By.CLASS_NAME, 'btn btn-primary on-white disabled-btn')
+        # locator = (By.CLASS_NAME, 'btn btn-primary on-white disabled-btn')
+        locator = (By.XPATH, '//*[@id="ember2675"]/div/div[2]/button[2]')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
@@ -55,7 +56,8 @@ class MedPage(BasePage):
 
     @property
     def pop_up_button(self):
-        locator = (By.CLASS_NAME, 'btn btn-primary on-white')
+        # locator = (By.CLASS_NAME, 'btn btn-primary on-white')
+        locator = (By.XPATH, '// *[ @ id = "ember2942"] / div / div / div / div[3] / button')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
