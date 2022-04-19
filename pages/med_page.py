@@ -15,32 +15,32 @@ class MedPage(BasePage):
 
     @property
     def patient_field(self):
-        locator = (By.ID, 'patientTypeAhead-ember2712')
+        locator = (By.ID, 'patientTypeAhead-ember2718')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def medication_field(self):
-        locator = (By.ID, 'inventoryItemTypeAhead-ember2779')
+        locator = (By.ID, 'inventoryItemTypeAhead-ember2785')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def prescription_field(self):
-        locator = (By.ID, 'prescription-ember2811')
+        locator = (By.ID, 'prescription-ember2817')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def prescription_date(self):
-        locator = (By.ID, 'display_prescriptionDate-ember2834')
+        locator = (By.ID, 'display_prescriptionDate-ember2840')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def quantity_field(self):
-        locator = (By.ID, 'quantity-ember2853')
+        locator = (By.ID, 'quantity-ember2859')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
     def refils_field(self):
-        locator = (By.ID, 'refills-ember2860')
+        locator = (By.ID, 'refills-ember2866')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
@@ -57,7 +57,7 @@ class MedPage(BasePage):
     @property
     def pop_up_button(self):
         # locator = (By.CLASS_NAME, 'btn btn-primary on-white')
-        locator = (By.XPATH, '// *[ @ id = "ember2942"] / div / div / div / div[3] / button')
+        locator = (By.XPATH, '// *[ @ id = "ember2681"] / div / div[2] / button[2]')
         return BaseElement(self.driver, by=locator[0], value=locator[1])
 
     @property
